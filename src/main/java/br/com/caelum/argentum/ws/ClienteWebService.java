@@ -21,7 +21,7 @@ public class ClienteWebService {
 
 		try {
 			URL url = new URL(URL_WEBSERVICE);
-			Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxylatam.indra.es", 8080));
+			Proxy proxy = new Proxy(Proxy_.Type.HTTP, new InetSocketAddress("proxylatam.indra.es", 8080));
 			connection = (HttpURLConnection) url.openConnection(proxy);
 			InputStream content = connection.getInputStream();
 			return new LeitorXML().carrega(content);
