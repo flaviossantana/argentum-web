@@ -10,7 +10,7 @@ import br.com.caelum.argentum.modelo.SerieTemporal;
 public class GeradorDeSerie {
 
 	public static SerieTemporal criaSerie(double... valores){
-		List<Candle> candles = new ArrayList<>();
+		List<Candle> candles = new ArrayList<>();sss
 		for(double d : valores){
 			candles.add(new Candle(d, d, d, d, 1000, Calendar.getInstance()));
 		}
